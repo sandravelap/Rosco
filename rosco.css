@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rosco-container {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 60%;
+    height: 80%;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+main {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)),
+        url("PlanetSavers_NoTextv2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    width: 110%;
+    height: 80%;
+    min-height: 450px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.letter-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter-button.active {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+}
+
+.letter-button.correct {
+    background-color: #2ecc71;
+}
+
+.letter-button.incorrect {
+    background-color: #e74c3c;
+}
+
+.letter-button.skipped {
+    background-color: #f39c12;
+}
+
+.control-panel {
+    width: 40%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.control-button {
+    width: 70%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #7b9db8;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #2980b9;
+}
+
+.game-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.timer,
+.score {
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+}
+
+.clue-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.clue {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.answer-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#userAnswer {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.result-container {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    min-height: 30px;
+}
+
+.incorrect-answer {
+    color: #e74c3c;
+}
+
+.game-over {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.edelweiss-tip {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 80%;
+    text-align: center;
+    animation: fadeIn 0.5s, fadeOut 0.5s 7.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

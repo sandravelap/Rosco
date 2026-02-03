@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra de Sostenibilidad</title>
+    <link rel="stylesheet" href="rosco.css">
+    <script src="rosco.js" defer></script>
+</head>
+
+<body>
+    <header class="game-info">
+        <div class="timer">Tiempo: 5:00</div>
+        <h1>Si somos responsables<br> ¡AÚN PODEMOS SALVAR EL PLANETA!</h1>
+        <div class="score">Puntos: 0/26</div>
+    </header>
+    <h2>Resuelve el pasapalabra y lee las pistas para descubir la flor secreta que abrirá el cryptex</h2>
+
+    <div class="container">
+
+        <main>
+            <div class="rosco-container" id="rosco"></div>
+            <div class="control-panel">
+                <button class="control-button" id="playButton">Jugar</button>
+                <button class="control-button" id="checkButton" disabled>Comprobar</button>
+                <button class="control-button" id="passButton" disabled>Pasa Palabra</button>
+            </div>
+        </main>
+
+        <div class="clue-container">
+            <div class="clue" id="currentClue">¡Pulsa "Jugar" para comenzar el juego!</div>
+        </div>
+
+        <div class="answer-container">
+            <input type="text" id="userAnswer" placeholder="Escribe tu respuesta..." disabled>
+        </div>
+
+        <div class="result-container" id="resultContainer"></div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
