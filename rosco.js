@@ -50,14 +50,14 @@ const scoreElement = document.querySelector('.score');
 
 // Crear el rosco de letras
 function createRosco() {
-    const radius = 180;
+    const radius = 150;
     const centerX = 250;
-    const centerY = 200;
+    const centerY = 125;
 
     glossary.forEach((item, index) => {
         const angle = (index * (2 * Math.PI / glossary.length)) - (Math.PI / 2); // Empieza en la parte superior
-        const x = centerX + radius * Math.cos(angle) - 20;
-        const y = centerY + radius * Math.sin(angle) - 20;
+        const x = centerX + radius * Math.cos(angle) - 10;
+        const y = centerY + radius * Math.sin(angle) - 10;
 
         const button = document.createElement('button');
         button.className = 'letter-button';

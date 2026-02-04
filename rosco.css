@@ -19,7 +19,7 @@ h1 {
     font-size: 2em;
     color: #2c3e50;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .container {
@@ -52,10 +52,10 @@ main {
         url("PlanetSavers_NoTextv2.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 110%;
+    background-size: 80%;
     width: 110%;
-    height: 80%;
-    min-height: 450px;
+    height: 60%;
+    min-height: 350px;
     max-height: 600px;
     display: flex;
     flex-direction: row;
@@ -64,13 +64,13 @@ main {
 
 .letter-button {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: #3498db;
     color: white;
     border: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -151,11 +151,11 @@ main {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    height:10%;
 }
 
 .clue {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .answer-container {
@@ -180,6 +180,7 @@ main {
     font-weight: bold;
     margin-bottom: 5px;
     min-height: 30px;
+    height: 10%;
 }
 
 .incorrect-answer {
